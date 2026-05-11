@@ -60,9 +60,8 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           <div id="root-layout">
           <header>
             <div className='frame'>
-                <Navbar/>
-                <Crosshair/>
-                <Crosshair/>
+                <Navbar />
+               
             </div>
           </header>
           <main>
