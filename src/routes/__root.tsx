@@ -60,7 +60,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           <div id="root-layout">
           <header>
             <div className='frame'>
-                <Navbar/>
+                <Navbar />
                
             </div>
           </header>
