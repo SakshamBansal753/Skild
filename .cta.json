@@ -1,0 +1,25 @@
+{
+  "projectName": "skild",
+  "mode": "file-router",
+  "typescript": true,
+  "packageManager": "npm",
+  "includeExamples": false,
+  "tailwind": true,
+  "addOnOptions": {},
+  "envVarValues": {
+    "VITE_CLERK_PUBLISHABLE_KEY": "pk_test_ZXhvdGljLWhlcnJpbmctMTUuY2xlcmsuYWNjb3VudHMuZGV2JA"
+  },
+  "git": true,
+  "install": true,
+  "routerOnly": false,
+  "version": 1,
+  "framework": "react",
+  "chosenAddOns": [
+    "biome",
+    "nitro",
+    "clerk",
+    "compiler",
+    "tanstack-query",
+    "shadcn"
+  ]
+}
