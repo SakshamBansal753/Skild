@@ -15,7 +15,7 @@ const Navbar = () =>
             </div>
             <div className="actions">
                 <Link to="/sign-in/$" className="btn-primary">
-                <LogIn size="16"/>
+                <LogIn size={16}/>
                 Sign in
                 </Link>
             </div>
