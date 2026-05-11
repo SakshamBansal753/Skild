@@ -1,0 +1,9 @@
+reviews:
+  auto_review:
+    enabled: true
+    branches:
+      - main
+      - develop
+      - staging
+      - release/*
+      - feature/*
