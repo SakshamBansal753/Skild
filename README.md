@@ -1,4 +1,68 @@
-Welcome to your new TanStack Start app! 
+
+# Welcome to Skild! 
+# 🚀 Skild — Agentic Intelligence Registry
+
+A modern **agent skill registry platform** for building, publishing, and executing reusable AI capabilities.
+
+Built with a production-grade stack: **Clerk, Firebase, PostHog, and TanStack Router**.
+
+---
+
+## ✨ Overview
+
+Skild is a developer-focused registry where “skills” behave like **modular intelligence units**.
+
+Each skill can be:
+- 🧠 Created as an AI capability
+- 📦 Published into a registry
+- ⚙️ Executed via install commands
+- 🔁 Reused across workflows
+
+---
+
+## 🧱 Tech Stack
+
+- ⚛️ React + TypeScript
+- 🧭 TanStack Router (file-based routing)
+- 🔐 Clerk (authentication & user management)
+- ☁️ Firebase (Firestore database)
+- 📊 PostHog (product analytics)
+- 🎨 Tailwind CSS (UI styling)
+
+---
+
+## ⚡ Features
+
+### 🧠 Skill Registry
+- Create and publish AI skills
+- Structured metadata (tags, category, commands)
+- Installable skill system
+
+### 🔐 Authentication
+- Secure login/signup with Clerk
+- User session handling
+- Protected routes
+
+### ☁️ Backend (Firebase)
+- Firestore database
+- Real-time data sync
+- Scalable serverless architecture
+
+### 📊 Analytics (PostHog)
+Tracked events:
+- Skill creation
+- Skill installation
+- Sign-in / sign-out
+- User interactions
+
+### 🧭 Routing (TanStack)
+- File-based routing system
+- Type-safe navigation
+- Fast route transitions
+
+---
+
+## 📁 Project Structure
 
 # Getting Started
 
@@ -271,3 +335,6 @@ Files prefixed with `demo` can be safely deleted. They are there to provide a st
 You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
 
 For TanStack Start specific documentation, visit [TanStack Start](https://tanstack.com/start).
+<img src="https://github.com/SakshamBansal753/Skild/blob/main/1.png"/>
+<img src="https://github.com/SakshamBansal753/Skild/blob/main/2.png"/>
+<img src="https://github.com/SakshamBansal753/Skild/blob/main/3.png"/>
