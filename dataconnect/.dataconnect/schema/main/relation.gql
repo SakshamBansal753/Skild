@@ -1,0 +1,178 @@
+extend type Skill {
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "Skill", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `Skill` table.
+  """
+  _count: Int! @fdc_generated(from: "Skill.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Skill` table where the `authorClerkId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  authorClerkId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Skill.authorClerkId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Skill` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Skill.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Skill` table where the `description` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  description_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Skill.description", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Skill` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Skill.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Skill` table where the `installCommand` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  installCommand_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Skill.installCommand", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Skill` table where the `promptConfig` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  promptConfig_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Skill.promptConfig", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Skill` table where the `title` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  title_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Skill.title", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Skill` table where the `usageExample` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  usageExample_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Skill.usageExample", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `Skill` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "Skill.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `Skill` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "Skill.createdAt", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "Skill.id", purpose: ENTITY_ID)
+}
+extend type User {
+  """
+  ✨ List `Skill` objects in a one-to-many relationship (where `Skill`.`author` is this object).
+  """
+  skills_on_author(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Skill_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Skill_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: Skill_Having
+  ): [Skill!]! @fdc_generated(from: "Skill.author", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "User", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `User` table.
+  """
+  _count: Int! @fdc_generated(from: "User.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `clerkId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  clerkId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.clerkId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `email` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  email_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.email", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `imageUrl` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  imageUrl_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.imageUrl", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `username` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  username_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.username", purpose: QUERY_COUNT)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "User.clerkId", purpose: ENTITY_ID)
+}

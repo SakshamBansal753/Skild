@@ -1,0 +1,6 @@
+connectorId: example
+
+generate:
+  javascriptSdk:
+    - outputDir: ../../generated/example
+      package: "@skild/example-sdk"

@@ -220,7 +220,23 @@
       @apply relative w-full overflow-hidden bg-base py-16 md:py-24;
     }
   }
+@utility glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
 
+@utility neon-border {
+  box-shadow:
+    0 0 0 1px rgba(139,92,246,0.2),
+    0 0 20px rgba(139,92,246,0.25);
+}
+
+@utility grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
   #home {
     @apply relative z-10;
 
@@ -252,6 +268,29 @@
       }
     }
 
+
+/* HERO glow depth */
+#home .hero::before {
+  content: "";
+  position: absolute;
+  inset: -200px;
+  background: radial-gradient(circle at 50% 20%, rgba(139,92,246,0.12), transparent 55%);
+  z-index: -1;
+}
+
+/* CTA micro animation */
+.btn-primary {
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* section spacing consistency */
+.latest {
+  padding-bottom: 6rem;
+}
     .latest {
       @apply mt-30 flex flex-col gap-8 px-4 py-8 md:px-12 md:py-12;
 
@@ -383,6 +422,11 @@
 
   .navbar {
     @apply relative z-50 flex h-16 items-center justify-between border-b border-border-subtle bg-base/80 px-4 backdrop-blur-sm md:px-8;
+      background: rgba(5, 5, 5, 0.6);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 
     .brand {
       @apply flex cursor-pointer items-center gap-2 md:gap-3;
