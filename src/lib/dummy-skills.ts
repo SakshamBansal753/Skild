@@ -1,6 +1,6 @@
-import type { SkillREcord } from "../../type";
+import type { SkillRecord } from "../../type";
 
-export const dummySkills: SkillREcord[] = [
+export const dummySkills: SkillRecord[] = [
 	{
 		id: "1",
 		title: "React Basics",

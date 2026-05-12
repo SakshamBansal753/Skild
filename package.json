@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.61.3",
+    "@clerk/tanstack-react-start": "^1.2.3",
+    "@posthog/react": "^1.9.0",
     "@tailwindcss/vite": "^4.3.0",
     "@tanstack/react-devtools": "latest",
     "@tanstack/react-query": "latest",
@@ -29,6 +31,8 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.577.0",
     "nitro": "npm:nitro-nightly@latest",
+    "posthog-js": "^1.373.1",
+    "posthog-node": "^5.21.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "tailwind-merge": "^3.0.2",

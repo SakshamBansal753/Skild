@@ -1,4 +1,4 @@
-interface SkillREcord {
+interface SkillRecord {
     id:string;
     title:string;
     slug:string;

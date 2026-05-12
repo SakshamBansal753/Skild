@@ -1,0 +1,24 @@
+mutation CreateUser @auth(level: PUBLIC) {
+  user_insert(
+    data: {
+      clerkId: "123"
+      email: "test@gmail.com"
+    }
+  )
+}
+
+mutation CreateSkill @auth(level: PUBLIC) {
+  skill_insert(
+    data: {
+      title: "React"
+      description: "Frontend"
+      tags: ["react"]
+      installCommand: "npm install"
+      promptConfig: "config"
+      usageExample: "example"
+      author: {
+        clerkId: "123"
+      }
+    }
+  )
+}
