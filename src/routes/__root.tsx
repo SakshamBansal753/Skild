@@ -11,6 +11,7 @@ import {
 } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { useEffect } from "react";
+import AnimatedCursor from "#/components/Animatedcursor.tsx";
 import Navbar from "#/components/Navbar";
 import TanStackQueryDevtools from "../integrations/tanstack-query/devtools";
 import appCss from "../styles.css?url";
@@ -51,27 +52,15 @@ interface MyRouterContext {
 export const Route = createRootRouteWithContext<MyRouterContext>()({
 	head: () => ({
 		meta: [
-			{
-				charSet: "utf-8",
-			},
-			{
-				name: "viewport",
-				content: "width=device-width, initial-scale=1",
-			},
-			{
-				title: "Skild- The registry for intelligence",
-			},
+			{ charSet: "utf-8" },
+			{ name: "viewport", content: "width=device-width, initial-scale=1" },
+			{ title: "Skild — The registry for intelligence" },
 			{
 				name: "description",
 				content: "Discover, publish and operate reusable agent capabilities",
 			},
 		],
-		links: [
-			{
-				rel: "stylesheet",
-				href: appCss,
-			},
-		],
+		links: [{ rel: "stylesheet", href: appCss }],
 	}),
 	component: RootDocument,
 });
@@ -85,10 +74,13 @@ function RootDocument() {
 			throw new Error("VITE_PUBLIC_POSTHOG_PROJECT_TOKEN is required");
 		}
 	}
+
 	return (
 		<html lang="en">
 			<head>
 				<HeadContent />
+				{/* Hide default cursor site-wide */}
+				<style>{`* { cursor: none !important; }`}</style>
 			</head>
 			<body className="dark font-sans antialiased wrap-anywhere">
 				<PostHogProvider
@@ -107,6 +99,10 @@ function RootDocument() {
 					<ClerkProvider>
 						<PostHogIdentify />
 						<PostHogPageView />
+
+						{/* Custom animated cursor */}
+						<AnimatedCursor />
+
 						<div id="root-layout">
 							<header>
 								<div className="frame">
@@ -121,9 +117,7 @@ function RootDocument() {
 						</div>
 
 						<TanStackDevtools
-							config={{
-								position: "bottom-right",
-							}}
+							config={{ position: "bottom-right" }}
 							plugins={[
 								{
 									name: "Tanstack Router",
