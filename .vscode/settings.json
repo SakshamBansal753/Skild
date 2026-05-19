@@ -31,9 +31,9 @@
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true,
-    "source.organizeImports.biome": true,
-    "source.fixAll": true,
-    "source.fixAll.biome": true
+    "source.organizeImports": "explicit",
+    "source.organizeImports.biome": "explicit",
+    "source.fixAll": "explicit",
+    "source.fixAll.biome": "explicit"
   }
 }
