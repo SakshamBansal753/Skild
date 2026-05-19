@@ -1,0 +1,37 @@
+[debug] [2026-05-19T21:17:00.699Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2026-05-19T21:17:04.121Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2026-05-19T21:17:04.124Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-19T21:17:04.125Z] > authorizing via signed-in user (kanhabansal563@gmail.com)
+[debug] [2026-05-19T21:17:04.127Z] Checked if tokens are valid: true, expires at: 1779228965250
+[debug] [2026-05-19T21:17:04.128Z] Checked if tokens are valid: true, expires at: 1779228965250
+[debug] [2026-05-19T21:17:04.128Z] [Firebase Plugin] User found:  kanhabansal563@gmail.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2026-05-19T21:17:04.129Z] Checked if tokens are valid: true, expires at: 1779228965250
+[debug] [2026-05-19T21:17:04.130Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[info] [Firebase Plugin] Starting SQL Connect toolkit (version 3.4.5) on port 50001
+[debug] [2026-05-19T21:17:04.660Z] I0520 02:47:04.648045   17336 control.go:100] [projects/emulator/locations/emulator/services/skild-85c54-service 5e53] UpdateResources(): done
+Main schema: sources: schema\schema.gql [413B] 
+Connector "example": sources: connectors\example\mutations.gql [455B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0520 02:47:04.648045   17336 control.go:100] [projects/emulator/locations/emulator/services/skild-85c54-service 5e53] UpdateResources(): done\nMain schema: sources: schema\\schema.gql [413B] \nConnector \"example\": sources: connectors\\example\\mutations.gql [455B] \n"}}
+[debug] [2026-05-19T21:17:04.661Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2026-05-19T21:17:04.661Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2026-05-19T21:17:04.661Z] Starting SQL Connect Emulator with command {"binary":"C:\\Users\\kanha\\.cache\\firebase\\emulators\\dataconnect-emulator-3.4.5.exe","args":["--logtostderr","-v=2","dev","--listen=localhost:50001","--config_dir=c:\\Users\\kanha\\tanstack\\skild\\dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting SQL Connect Emulator with command {\"binary\":\"C:\\\\Users\\\\kanha\\\\.cache\\\\firebase\\\\emulators\\\\dataconnect-emulator-3.4.5.exe\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50001\",\"--config_dir=c:\\\\Users\\\\kanha\\\\tanstack\\\\skild\\\\dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: SQL Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"SQL Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[debug] [2026-05-19T21:17:04.761Z] I0520 02:47:04.732286   10316 load.go:31] Reloading schema and connectors...
+I0520 02:47:04.744874   10316 control.go:100] [projects/emulator/locations/emulator/services/skild-85c54-service fffb] UpdateResources(): done
+Main schema: sources: schema\schema.gql [413B] 
+Connector "example": sources: connectors\example\mutations.gql [455B] 
+I0520 02:47:04.758290   10316 codegen.go:101] [connector "example" javascriptSdk] Generating sources into "c:\\Users\\kanha\\tanstack\\skild\\dataconnect\\generated\\example"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0520 02:47:04.732286   10316 load.go:31] Reloading schema and connectors...\nI0520 02:47:04.744874   10316 control.go:100] [projects/emulator/locations/emulator/services/skild-85c54-service fffb] UpdateResources(): done\nMain schema: sources: schema\\schema.gql [413B] \nConnector \"example\": sources: connectors\\example\\mutations.gql [455B] \nI0520 02:47:04.758290   10316 codegen.go:101] [connector \"example\" javascriptSdk] Generating sources into \"c:\\\\Users\\\\kanha\\\\tanstack\\\\skild\\\\dataconnect\\\\generated\\\\example\"\n"}}
+[debug] [2026-05-19T21:17:04.865Z] I0520 02:47:04.774029   10316 collector.go:107] schema extensions wrote into "c:\\Users\\kanha\\tanstack\\skild\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [82799B] main\relation.gql [6578B] main\query.gql [2404B] main\mutation.gql [6444B] main\implicit.gql [266B] main\input.gql [16026B] 
+I0520 02:47:04.781258   10316 collector.go:107] connector "example" javascriptSdk wrote into "c:\\Users\\kanha\\tanstack\\skild\\dataconnect\\generated\\example"
+Generated sources: index.cjs.js [1217B] .guides/usage.md [602B] .guides/config.json [236B] index.d.ts [1570B] package.json [611B] README.md [10133B] .guides/setup.md [580B] esm\index.esm.js [1077B] esm\package.json [17B] 
+I0520 02:47:04.781258   10316 installsdk.go:138] generate.javascriptSdk.packageJsonDir is not specified, skipping automatic installation of package
+I0520 02:47:04.781258   10316 load.go:109] Finished reloading
+I0520 02:47:04.798801   10316 dev.go:104] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0520 02:47:04.774029   10316 collector.go:107] schema extensions wrote into \"c:\\\\Users\\\\kanha\\\\tanstack\\\\skild\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [82799B] main\\relation.gql [6578B] main\\query.gql [2404B] main\\mutation.gql [6444B] main\\implicit.gql [266B] main\\input.gql [16026B] \nI0520 02:47:04.781258   10316 collector.go:107] connector \"example\" javascriptSdk wrote into \"c:\\\\Users\\\\kanha\\\\tanstack\\\\skild\\\\dataconnect\\\\generated\\\\example\"\nGenerated sources: index.cjs.js [1217B] .guides/usage.md [602B] .guides/config.json [236B] index.d.ts [1570B] package.json [611B] README.md [10133B] .guides/setup.md [580B] esm\\index.esm.js [1077B] esm\\package.json [17B] \nI0520 02:47:04.781258   10316 installsdk.go:138] generate.javascriptSdk.packageJsonDir is not specified, skipping automatic installation of package\nI0520 02:47:04.781258   10316 load.go:109] Finished reloading\nI0520 02:47:04.798801   10316 dev.go:104] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[debug] [2026-05-19T21:17:04.987Z] I0520 02:47:04.984560   10316 engine.go:209] [projects/emulator/locations/emulator/services/skild-85c54-service fffb] ExecuteGraphqlRead query IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0520 02:47:04.984560   10316 engine.go:209] [projects/emulator/locations/emulator/services/skild-85c54-service fffb] ExecuteGraphqlRead query IntrospectionQuery: succeeded. \n"}}
+[debug] [2026-05-19T21:17:05.586Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-05-19T21:17:05.586Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]

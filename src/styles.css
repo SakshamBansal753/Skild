@@ -220,6 +220,7 @@
       @apply relative w-full overflow-hidden bg-base py-16 md:py-24;
     }
   }
+}
 @utility glass {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(16px);
