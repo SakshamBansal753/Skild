@@ -11,7 +11,7 @@ import {
 } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { useEffect } from "react";
-import AnimatedCursor from "#/components/Animatedcursor.tsx";
+import AnimatedCursor from "#/components/AnimatedCursor.tsx";
 import Navbar from "#/components/Navbar";
 import TanStackQueryDevtools from "../integrations/tanstack-query/devtools";
 import appCss from "../styles.css?url";
